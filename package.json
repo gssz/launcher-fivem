@@ -28,6 +28,7 @@
 					"config": {
 						"title": "MzCity Launcher",
 						"name": "MzCity_Launcher",
+						"iconUrl": "https://raw.githubusercontent.com/gssz/launcher-fivem/main/icon.ico",
 						"setupIcon": "./icon.ico"
 					}
 				}
