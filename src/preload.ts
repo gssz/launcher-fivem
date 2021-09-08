@@ -1,7 +1,7 @@
 import { ipcRenderer, contextBridge } from 'electron'
 import { exec } from 'child_process'
 import path from 'path'
-import fs from 'fs-extra'
+import fs from 'fs'
 
 contextBridge.exposeInMainWorld('api', {
 	send: (channel: string, data: any) => {
