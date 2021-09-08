@@ -1,4 +1,5 @@
 import React from 'react'
+import { logo } from './logo'
 
 declare const window: Window &
 	typeof globalThis & {
@@ -31,10 +32,11 @@ const Home: React.FC = () => {
 
 	return (
 		<div>
-			<iframe ref={iframeRef} src="data:text/plain;charset=UTF-8," />
-			<button onClick={() => launchGame()}>
-				<h1>{loading ? 'Abrindo...' : 'Jogar'}</h1>
+			<img src={logo} className="logo" />
+			<button onClick={() => launchGame()} className="button">
+				<h1>{loading ? 'Carregando...' : 'Jogar'}</h1>
 			</button>
+			<iframe ref={iframeRef} src="data:text/plain;charset=UTF-8," />
 		</div>
 	)
 }
