@@ -1,6 +1,6 @@
 {
 	"name": "launcher-fivem",
-	"productName": "launcher-fivem",
+	"productName": "MzCity Launcher",
 	"version": "1.0.0",
 	"description": "My Electron application description",
 	"main": ".webpack/main",
@@ -26,22 +26,10 @@
 				{
 					"name": "@electron-forge/maker-squirrel",
 					"config": {
-						"name": "launcher_fivem"
+						"title": "MzCity Launcher",
+						"name": "MzCity_Launcher",
+						"setupIcon": "./icon.ico"
 					}
-				},
-				{
-					"name": "@electron-forge/maker-zip",
-					"platforms": [
-						"darwin"
-					]
-				},
-				{
-					"name": "@electron-forge/maker-deb",
-					"config": {}
-				},
-				{
-					"name": "@electron-forge/maker-rpm",
-					"config": {}
 				}
 			],
 			"plugins": [
