@@ -1,5 +1,5 @@
 {
-	"name": "launcher-fivem",
+	"name": "mzcity_launcher",
 	"productName": "MzCity Launcher",
 	"version": "1.0.0",
 	"description": "My Electron application description",
@@ -27,7 +27,7 @@
 					"name": "@electron-forge/maker-squirrel",
 					"config": {
 						"title": "MzCity Launcher",
-						"name": "MzCity_Launcher",
+						"name": "mzcity_launcher",
 						"iconUrl": "https://raw.githubusercontent.com/gssz/launcher-fivem/main/icon.ico",
 						"setupIcon": "./icon.ico"
 					}

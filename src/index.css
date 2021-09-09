@@ -16,6 +16,8 @@ body {
 	font-size: 1.6rem;
 	position: relative;
 	overflow: hidden;
+	user-select: none;
+	cursor: default;
 }
 
 iframe {
@@ -24,7 +26,7 @@ iframe {
 
 .logo {
 	position: absolute;
-	top: -30px;
+	top: -60px;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 60%;
@@ -32,24 +34,35 @@ iframe {
 	z-index: -1;
 }
 
-.button {
+.startgame {
 	background-color: #efefef;
 	border: none;
-	border-radius: 10px;
-	width: 150px;
-	height: 50px;
+	border-radius: 1rem;
+	padding: 0 3rem;
+	height: 5rem;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: #891edd;
-	transition: transform .25s ease-in-out;
+	transition: transform 0.25s ease-in-out;
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	box-shadow: 0 0 30px -2px black;
-	margin-bottom: 100px;
+	margin-bottom: 5rem;
 }
 
-.button:hover {
+.startgame:hover {
 	transform: scale(1.2);
+}
+
+.startgame[disabled] {
+	opacity: 0.5;
+}
+
+.version {
+	position: absolute;
+	left: 1rem;
+	bottom: 1rem;
+	color: #dddddd;
 }
